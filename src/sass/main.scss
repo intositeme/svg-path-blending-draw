@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:800);
+body {
+	margin: 0px;
+	padding: 30px;
+}
+h1, h2 {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+.content {
+	width: 600px;
+	margin: 0 auto;
+}
+.alphabets {
+	width: 200px;
+	margin: 0;
+	padding: 0;
+}
+.test {
+	width: 800px;
+
+}
+.path-header {
+	width: 600px;
+}
+.path-header--fixed {
+	position: fixed;
+}
+.dummy-scroll {
+	height: 3000px;
+}
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}

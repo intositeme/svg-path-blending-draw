@@ -1,0 +1,23 @@
+extends _layouts/base.jade
+
+// Define Page specific classes if neccessary.
+block vars
+	- var htmlClass = ''; 		// <html> class
+	- var bodyClass = '';		// <body> class
+	- var wrapClass = '';		// page content holder class
+
+block content
+	h1 Hello World!
+	div.alphabets
+		include _svg/a.svg
+
+	div.test
+		//viewBox
+		svg(viewBox="0 0 800 203")
+			use(xlink:href="#alphabet-a" x="0" y="0")
+			use(xlink:href="#alphabet-b" x="100" y="0")
+		// <use xlink:href="#sun" x="120" y="60"/>
+
+// Import page specific Scripts
+block scripts
+	script(src='#{absoluteUrl}js/index.js')

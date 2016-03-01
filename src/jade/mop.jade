@@ -1,0 +1,27 @@
+extends _layouts/base.jade
+
+// Define Page specific classes if neccessary.
+block vars
+	- var htmlClass = ''; 		// <html> class
+	- var bodyClass = '';		// <body> class
+	- var wrapClass = '';		// page content holder class
+	- var absoluteUrl = ''		// override base
+
+block content
+	.content
+		div#mop2.path-header.blend-path.path-header--fixed
+			include _svg/mop.svg
+		div.clear
+		div#mop.path-header.blend-path
+			include _svg/mop.svg
+			h2 Scroll
+		div.dummy-scroll
+		div.test
+			//viewBox
+			//- svg(viewBox="0 0 800 203")
+			//- 	use(xlink:href="#alphabet-a" x="0" y="0")
+			//- 	use(xlink:href="#alphabet-b" x="100" y="0")
+
+// Import page specific Scripts
+block scripts
+	script(src='#{absoluteUrl}js/mop.js')
